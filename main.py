@@ -1,12 +1,18 @@
 import streamlit as st
+import pandas as pd
 import gettext
 
 
 _ = gettext.gettext
-localizor_DE = gettext.translation('base',localedir='locale',languages=['DE'])
-localizor_DE.install()
-localizor_EN = gettext.translation('base',localedir='locale',languages=['EN'])
-localizor_EN.install()
+try:
+    localizor_DE = gettext.translation('base',localedir='locale',languages=['DE'])
+    localizor_DE.install()
+    localizor_EN = gettext.translation('base',localedir='locale',languages=['EN'])
+    localizor_EN.install()
+except:
+    pass
+
+st.dataframe(pd.read_csv('Sleep_health_and_lifestyle_dataset.csv'))
 if st.button("DE"):
     _ = localizor_DE.gettext
 if st.button("EN"):
