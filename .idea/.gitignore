@@ -6,3 +6,7 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+venv
+.vscode
+locale/DE/LC_MESSAGES/base.mo
+locale/EN/LC_MESSAGES/base.mo
