@@ -3,12 +3,12 @@ import gettext
 
 
 _ = gettext.gettext
-localizor_DE = gettext.translation('base',localedir='locale',languages=['DE'])
-localizor_DE.install()
+# localizor_DE = gettext.translation('base',localedir='locale',languages=['DE'])
+# localizor_DE.install()
 localizor_EN = gettext.translation('base',localedir='locale',languages=['EN'])
 localizor_EN.install()
-if st.button("DE"):
-    _ = localizor_DE.gettext
+# if st.button("DE"):
+#     _ = localizor_DE.gettext
 if st.button("EN"):
     _ = localizor_EN.gettext
 if st.button("Original"):
