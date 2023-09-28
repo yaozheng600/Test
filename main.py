@@ -1,10 +1,8 @@
 import streamlit as st
 import gettext
-import locale
+
 
 _ = gettext.gettext
-current_locale = locale.getlocale()
-locale.setlocale(locale.LC_ALL,current_locale)
 localizor_DE = gettext.translation('base',localedir='locale',languages=['DE'])
 localizor_DE.install()
 localizor_EN = gettext.translation('base',localedir='locale',languages=['EN'])
