@@ -3,10 +3,3 @@
 /workspace.xml
 # 基于编辑器的 HTTP 客户端请求
 /httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
-venv
-.vscode
-locale/DE/LC_MESSAGES/base.mo
-locale/EN/LC_MESSAGES/base.mo
