@@ -4,7 +4,7 @@ import gettext
 import os
 
 # 设置 LC_MESSAGES 环境变量
-os.environ['LC_MESSAGES'] = 'de_DE.UTF-8'
+os.environ['LC_MESSAGES'] = 'DE'
 
 
 _ = gettext.gettext
