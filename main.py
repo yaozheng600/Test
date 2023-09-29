@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 import gettext
+import os
+
+# 设置 LC_MESSAGES 环境变量
+os.environ['LC_MESSAGES'] = 'de_DE.UTF-8'
 
 
 _ = gettext.gettext
